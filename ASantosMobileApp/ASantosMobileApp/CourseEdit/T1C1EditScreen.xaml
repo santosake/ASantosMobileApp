@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ASantosMobileApp.T1C1EditScreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Course Edit Screen" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                <!--Course Name-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course Name:"/>
+                        <Entry Placeholder="Enter Course Name" x:Name="CourseName"/>
+                    </StackLayout>
+                </Frame>
+                <!--Dates-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Start Date:"
+                               Grid.ColumnSpan="4" HorizontalOptions="Start"/>
+                        <DatePicker x:Name="CourseStart" Grid.ColumnSpan="4" Grid.Row="2" VerticalOptions="Start">
+                            <DatePicker.Format>
+                                MM-dd-yyyy
+                            </DatePicker.Format>
+                        </DatePicker>
+
+                        <Label Text="End Date:"
+                               Grid.ColumnSpan="4" Grid.Row="3" HorizontalOptions="Start"/>
+                        <DatePicker x:Name="CourseEnd" Grid.ColumnSpan="4" Grid.Row="4" VerticalOptions="Start">
+                            <DatePicker.Format>
+                                MM-dd-yyyy
+                            </DatePicker.Format>
+                        </DatePicker>
+
+                    </StackLayout>
+                </Frame>
+                <!--Status-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course Status:"/>
+                        <Picker x:Name="picker"
+                                Title="Course Status"
+                                VerticalOptions="CenterAndExpand">
+                            <Picker.Items>
+                                <x:String>Plan To Take</x:String>
+                                <x:String>In Progress</x:String>
+                                <x:String>Dropped</x:String>
+                                <x:String>Completed</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+                <!--Instructor-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course Instructor:"/>
+                        <Label Text="Name"/>
+                        <Entry x:Name="CourseInstructorName" Placeholder="Enter Name"/>
+                        <Label Text="Phone"/>
+                        <Entry x:Name="CourseInstructorPhone" Placeholder="Enter Phone Number"/>
+                        <Label Text="Email"/>
+                        <Entry x:Name="CourseInstructorEmail" Placeholder="Enter Email"/>
+                    </StackLayout>
+                </Frame>
+                <!--Notes-->
+                <Frame>
+                    <StackLayout Padding="3">
+                        <Label Text="Notes:"/>
+                        <Editor x:Name="Notes" Placeholder="Enter Notes Here" HeightRequest="100"/>
+                    </StackLayout>
+                </Frame>
+                <!--Due Date-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Due Date:"/>
+                        <DatePicker x:Name="CourseDueDate" VerticalOptions="Start">
+                            <DatePicker.Format>
+                                MM-dd-yyyy
+                            </DatePicker.Format>
+                        </DatePicker>
+                    </StackLayout>
+                </Frame>
+                <!--Assessments-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Assessments:"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Objective Assessment Name:"/>
+                                <Entry x:Name="OAName" Placeholder="Enter Name"/>
+                                <Label Text="Start Date:"/>
+                                <DatePicker x:Name="OAStart" VerticalOptions="Start">
+                                    <DatePicker.Format>
+                                        MM-dd-yyyy
+                                    </DatePicker.Format>
+                                </DatePicker>
+                                <Label Text="Due Date:"/>
+                                <DatePicker x:Name="OAEnd" VerticalOptions="Start">
+                                    <DatePicker.Format>
+                                        MM-dd-yyyy
+                                    </DatePicker.Format>
+                                </DatePicker>
+                                <Button Text="Save"
+                                        Clicked="OASaveButton_Clicked"/>
+                                <Label Text="" x:Name="OASaveErrors" TextColor="Red"/>
+                                <Button Text="Delete Assessment"
+                                        Clicked="OBJDeleteButton_Clicked"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Performance Assessment Name:"/>
+                                <Entry x:Name="PAName" Placeholder="Enter Name"/>
+                                <Label Text="Start Date:"/>
+                                <DatePicker x:Name="PAStart" VerticalOptions="Start">
+                                    <DatePicker.Format>
+                                        MM-dd-yyyy
+                                    </DatePicker.Format>
+                                </DatePicker>
+                                <Label Text="Due Date:"/>
+                                <DatePicker x:Name="PAEnd" VerticalOptions="Start">
+                                    <DatePicker.Format>
+                                        MM-dd-yyyy
+                                    </DatePicker.Format>
+                                </DatePicker>
+                                <Button Text="Save"
+                                        Clicked="PASaveButton_Clicked"/>
+                                <Label Text="" x:Name="PASaveErrors" TextColor="Red"/>
+                                <Button Text="Delete Assessment"
+                                        Clicked="PRFDeleteButton_Clicked"/>
+                            </StackLayout>
+                        </Frame>    
+                    </StackLayout>
+                </Frame>
+                <!--Nav-->
+                <StackLayout>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Error Messages:"/>
+                            <Label Text="" x:Name="ErrorMessages" TextColor="Red" FontSize="Micro"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Save"
+                            Grid.Row="2"
+                            Grid.Column="2"                            
+                            FontSize="Small" 
+                            HorizontalOptions="End"
+                            Clicked="SaveButton_Clicked"/>
+                    <Button Text="Back" 
+                            Grid.Row="2"
+                            Grid.Column="1"                          
+                            FontSize="Small" 
+                            HorizontalOptions="Start"
+                            Clicked="BackButton_Clicked"/>
+                    <Button Text="Delete Course"
+                            FontSize="Small"
+                            Clicked="DeleteButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

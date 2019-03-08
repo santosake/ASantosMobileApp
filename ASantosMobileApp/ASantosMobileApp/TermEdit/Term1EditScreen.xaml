@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="ASantosMobileApp.Term1EditScreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Term Edit Screen" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                <!--Term Title-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Term Title:" Grid.ColumnSpan="2" HorizontalOptions="Start"/>
+                        <Entry x:Name="TermTitle" Placeholder="Enter Term Title" Grid.Row="2" VerticalOptions="Start" Grid.ColumnSpan="2"/>
+                    </StackLayout>
+                </Frame>
+                <!--Dates-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Start Date:"
+                               Grid.ColumnSpan="4" HorizontalOptions="Start"/>
+                        <DatePicker x:Name="TermStart" Grid.ColumnSpan="4" Grid.Row="2" VerticalOptions="Start">
+                            <DatePicker.Format>
+                                MM-dd-yyyy
+                            </DatePicker.Format>
+                        </DatePicker>
+
+                        <Label Text="End Date:"
+                               Grid.ColumnSpan="4" Grid.Row="3" HorizontalOptions="Start"/>
+                        <DatePicker x:Name="TermEnd" Grid.ColumnSpan="4" Grid.Row="4" VerticalOptions="Start">
+                            <DatePicker.Format>
+                                MM-dd-yyyy
+                            </DatePicker.Format>
+                        </DatePicker>
+
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <!--Error Messages-->
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Error Messages:"/>
+                            <Label Text="" x:Name="ErrorMessageDisplay"  TextColor="Red" FontSize="Micro"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Save"
+                            Grid.Row="2"
+                            Grid.Column="2"                            
+                            FontSize="Small" 
+                            HorizontalOptions="End"
+                            Clicked="SaveButton_Clicked"/>
+                    <Button Text="Back" 
+                            Grid.Row="2"
+                            Grid.Column="1"                          
+                            FontSize="Small" 
+                            HorizontalOptions="Start"
+                            Clicked="BackButton_Clicked"/>
+                    <Button Text="Delete Term"
+                            FontSize="Small"
+                            Clicked="DeleteButton_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>    
+    </ContentPage.Content>
+</ContentPage>

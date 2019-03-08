@@ -1,0 +1,16 @@
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\bin\Debug\netstandard2.0\ASantosMobileApp.deps.json
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\bin\Debug\netstandard2.0\ASantosMobileApp.dll
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.csprojAssemblyReference.cache
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.csproj.CoreCompileInputs.cache
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.AssemblyInfoInputs.cache
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.AssemblyInfo.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\bin\Debug\netstandard2.0\ASantosMobileApp.pdb
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.dll
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\ASantosMobileApp.pdb
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\CourseDetails\T1C1DetailsScreen.xaml.g.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\CourseEdit\T1C1EditScreen.xaml.g.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\TermDetails\Term1DetailsScreen.xaml.g.cs
+C:\Users\Happi\Desktop\ASantosMobileApp\ASantosMobileApp\ASantosMobileApp\obj\Debug\netstandard2.0\TermEdit\Term1EditScreen.xaml.g.cs

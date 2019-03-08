@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ASantosMobileApp"
+             x:Class="ASantosMobileApp.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Term Selection Screen" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+            <Button Text="Add Term"
+                    Clicked="AddTermButton_Clicked"/>
+            <!--Term 1-->
+            <Frame>
+                <StackLayout>
+                    <Label Text="Term 1" x:Name="Term1Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term1Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term1End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm1_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm1_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 2-->
+            <Frame x:Name="Term2Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 2" x:Name="Term2Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term2Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term2End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm2_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm2_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 3-->
+            <Frame x:Name="Term3Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 3" x:Name="Term3Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term3Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term3End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm3_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm3_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 4-->
+            <Frame x:Name="Term4Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 4" x:Name="Term4Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term4Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term4End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm4_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm4_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 5-->
+            <Frame x:Name="Term5Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 5" x:Name="Term5Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term5Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term5End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm5_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm5_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 6-->
+            <Frame x:Name="Term6Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 6" x:Name="Term6Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term6Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term6End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm6_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm6_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 7-->
+            <Frame x:Name="Term7Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 7" x:Name="Term7Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term7Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term7End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm7_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm7_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 8-->
+            <Frame x:Name="Term8Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 8" x:Name="Term8Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term8Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term8End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm8_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm8_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 9-->
+            <Frame x:Name="Term9Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 9" x:Name="Term9Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term9Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term9End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm9_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm9_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 10-->
+            <Frame x:Name="Term10Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 10" x:Name="Term10Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term10Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term10End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm10_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm10_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 11-->
+            <Frame x:Name="Term11Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 11" x:Name="Term11Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term11Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term11End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm11_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm11_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 12-->
+            <Frame x:Name="Term12Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 12" x:Name="Term12Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term12Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term12End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm12_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm12_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 13-->
+            <Frame x:Name="Term13Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 13" x:Name="Term13Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term13Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term13End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm13_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm13_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 14-->
+            <Frame x:Name="Term14Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 14" x:Name="Term14Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term14Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term14End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm14_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm14_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!--Term 15-->
+            <Frame x:Name="Term15Frame" IsVisible="False">
+                <StackLayout>
+                    <Label Text="Term 15" x:Name="Term15Title" FontSize="Large" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term15Start" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Date:" HorizontalOptions="Center"/>
+                        <Label Text="" FontSize="Small" x:Name="Term15End" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit"                            
+                                FontSize="Small" 
+                                HorizontalOptions="Center"
+                                Clicked="EditTerm15_Clicked"/>
+                        <Button Grid.Column="2" 
+                                Text="Details" 
+                                FontSize="Small" HorizontalOptions="Center"
+                                Clicked="DetailsTerm15_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

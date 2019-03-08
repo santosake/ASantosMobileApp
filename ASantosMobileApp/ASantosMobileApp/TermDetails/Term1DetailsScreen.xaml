@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ASantosMobileApp.Term1DetailsScreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Term Edit Screen" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                <!--Term Header-->
+                <Label Text="Term 1" x:Name="TermTitle" FontSize="Medium" HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Start Date:" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="TermStart" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="End Date:" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="TermEnd" HorizontalOptions="Start"/>
+                </StackLayout>
+                <!--Course 1-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 1" x:Name="Course1" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C1_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Course 2-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 2" x:Name="Course2" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C2_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Course 3-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 3" x:Name="Course3" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C3_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Course 4-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 4" x:Name="Course4" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C4_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Course 5-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 5" x:Name="Course5" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C5_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Course 6-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course 6" x:Name="Course6" HorizontalOptions="Start"/>
+                        <Button Text="Details" 
+                                HorizontalOptions="Start"
+                                Clicked="C6_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Back Button-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Back" 
+                            Grid.Column="1"                          
+                            FontSize="Small" 
+                            HorizontalOptions="Start"
+                            Clicked="BackButton_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

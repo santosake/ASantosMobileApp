@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ASantosMobileApp.T1C1DetailsScreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Course Details" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                <!--Course Name-->
+                <Frame>
+                    <Label Text="Course Name" x:Name="CourseName"/>
+                </Frame>
+                <!--Dates-->
+                <Frame>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Start Date:" HorizontalOptions="Start"/>
+                            <Label Text="" x:Name="CourseStart" HorizontalOptions="Start"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="End Date:" HorizontalOptions="Start"/>
+                            <Label Text="" x:Name="CourseEnd" HorizontalOptions="Start"/>
+                        </StackLayout>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Turn on Start Date Notifications?" FontSize="Micro"/>
+                                <Switch x:Name="CourseStartSwitch" Toggled="CourseSwitchStart_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="CourseStartErrorMessage"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Turn on End Date Notifications?" FontSize="Micro"/>
+                                <Switch x:Name="CourseEndSwitch" Toggled="CourseSwitchEnd_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="CourseEndErrorMessage"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <!--Status-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course Status:"/>
+                        <Label Text="Status" x:Name="CourseStatus"/>
+                    </StackLayout>
+                </Frame>
+                <!--Instructor-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Course Instructor:"/>
+                        <Label Text="Name" x:Name="CourseInstructorName"/>
+                        <Label Text="Phone" x:Name="CourseInstructorPhone"/>
+                        <Label Text="Email" x:Name="CourseInstructorEmail"/>
+                    </StackLayout>
+                </Frame>
+                <!--Notes-->
+                <Frame>
+                    <StackLayout Padding="3">
+                        <Label Text="Notes:"/>
+                        <Editor Text="" HeightRequest="100" x:Name="Notes" IsEnabled="False"/>
+                        <Button Text="Share"
+                                Clicked="ShareButton_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <!--Due Date-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Due Date:"/>
+                        <Label Text="" x:Name="DueDate"/>
+                        <Label Text="Turn on Notification for this Due Date?" FontSize="Micro"/>
+                        <Switch x:Name="DueDateSwitch" Toggled="DueDateSwitchToggled"/>
+                        <Label Text="" TextColor="Red" FontSize="Micro" x:Name="DueDateErrorMessage"/>
+                    </StackLayout>
+                </Frame>
+                <!--Assessments-->
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Assessments:"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Objective Assessment Name:"/>
+                                <Label Text="" x:Name="OAName"/>
+                                <Label Text="Start Date:"/>
+                                <Label Text="" x:Name="OAStartDate"/>
+                                <Label Text="Turn on Notification for this Start Date?" FontSize="Micro"/>
+                                <Switch x:Name="OAStartSwitch" Toggled="OAStartSwitch_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="OAStartErrorMessage"/>
+                                <Label Text="Due Date:"/>
+                                <Label Text="" x:Name="OADueDate"/>
+                                <Label Text="Turn on Notification for this Assessment?" FontSize="Micro"/>
+                                <Switch x:Name="OBJSwitch" Toggled="OBJSwitch_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="OBJErrorMessage"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Performance Assessment Name:"/>
+                                <Label Text="" x:Name="PAName"/>
+                                <Label Text="Start Date:"/>
+                                <Label Text="" x:Name="PAStartDate"/>
+                                <Label Text="Turn on Notification for this Start Date?" FontSize="Micro"/>
+                                <Switch x:Name="PAStartSwitch" Toggled="PAStartSwitch_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="PAStartErrorMessage"/>
+                                <Label Text="Due Date:"/>
+                                <Label Text="" x:Name="PADueDate"/>
+                                <Label Text="Turn on Notification for this Assessment?" FontSize="Micro"/>
+                                <Switch x:Name="PRFSwitch" Toggled="PRFSwitch_Toggled"/>
+                                <Label Text="" TextColor="Red" FontSize="Micro" x:Name="PRFErrorMessage"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <!--Nav-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Back" 
+                            Grid.Column="1"                          
+                            FontSize="Small" 
+                            HorizontalOptions="Start"
+                            Clicked="Back_Clicked"/>
+                    <Button Text="Edit" 
+                            Grid.Column="2"                            
+                            FontSize="Small" 
+                            HorizontalOptions="End"
+                            Clicked="GoToEdit_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
